@@ -40,7 +40,7 @@
         <TextView
             android:id="@+id/mosque_name"
             style="@style/TextAppearance.AppCompat.Body2"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:text="madni masjid" />
@@ -48,7 +48,7 @@
         <TextView
             android:id="@+id/mosque_address"
             style="@style/TextAppearance.AppCompat.Body1"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:text="fuara chowk garden west karachi" />
@@ -56,14 +56,15 @@
 
     <!-- Can be replaced by a widget -->
    <ImageView
-        android:id="@+id/secondary_action"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:id="@+id/favourites_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:scaleType="centerInside"
+       android:src="@drawable/heart"
         />
 </LinearLayout>

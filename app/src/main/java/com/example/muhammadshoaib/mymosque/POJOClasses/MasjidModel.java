@@ -8,7 +8,7 @@ public class MasjidModel {
     private String latitude;
     private String imageurl;
     private String address;
-    private String farvoriate;
+    private int farvoriate;
 
 
     public int getID() {
@@ -35,7 +35,7 @@ public class MasjidModel {
         return address;
     }
 
-    public String getFarvoriate() {
+    public int getFarvoriate() {
         return farvoriate;
     }
 }

@@ -49,6 +49,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
         Picasso.with(context).load(info.get(i).getImageUrl()).into(viewHolder.mosque_image);
 
+        if (info.get(i).getFarvoriate() == 1){
+
+
+            viewHolder.favourite_image.setImageResource(R.drawable.like);
+
+        }
+
+        else {
+
+            viewHolder.favourite_image.setImageResource(R.drawable.heart);
+        }
+
 
 
 
@@ -62,7 +74,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView mosque_image;
+        ImageView mosque_image,favourite_image;
         TextView mosque_name,mosque_address;
 
 
@@ -72,6 +84,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             mosque_image=itemView.findViewById(R.id.mosque_image);
             mosque_name=itemView.findViewById(R.id.mosque_name);
             mosque_address=itemView.findViewById(R.id.mosque_address);
+            favourite_image=itemView.findViewById(R.id.favourites_icon);
 
 
 

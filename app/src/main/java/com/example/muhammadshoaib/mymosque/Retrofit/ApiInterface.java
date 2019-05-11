@@ -5,6 +5,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
 
@@ -12,7 +13,8 @@ public interface ApiInterface {
 
 
     @GET("getMosquesList/33")
-    Call<MasjidArrayList> getInfo();
+    Call<MasjidArrayList> getInfo(@Query("page") int page);
+
 
 
 }
